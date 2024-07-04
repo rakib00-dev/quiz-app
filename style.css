@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,4 +12,42 @@ body {
 
 li {
   list-style: none;
+}
+
+#opt {
+  padding: 0 20px;
+  background: #f4f4f4;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+}
+
+#opt:hover {
+  background: #dbdbdb;
+}
+
+#opt:active {
+  background: #ffffff;
+}
+
+label {
+  display: flex;
+  width: 90%;
+  float: right;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+input {
+  display: block;
+  width: 10%;
+  float: left;
+  cursor: pointer;
 }

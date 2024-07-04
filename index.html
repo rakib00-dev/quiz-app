@@ -8,10 +8,30 @@
   </head>
   <body>
     <div id="quiz-container">
-      <h1>Welcome to the Quiz!</h1>
-      <p id="question"></p>
-      <ul id="answer-choices"></ul>
-      <button id="submit-button">Submit Answer</button>
+      <h1>Welcome to Our Quiz App!</h1>
+      <br /><br />
+      <div id="question">
+        <h2>What is result of this math {(2)4+3*2} ?</h2>
+      </div>
+      <div id="answer-choices">
+        <div id="opt">
+          <input id="a" type="radio" value="a" name="quizs" />
+          <label for="a">a) 41</label>
+        </div>
+        <div id="opt">
+          <input id="b" type="radio" value="b" name="quizs" />
+          <label for="b">b) 11</label>
+        </div>
+        <div id="opt">
+          <input id="c" type="radio" value="c" name="quizs" />
+          <label for="c">c) 14</label>
+        </div>
+        <div id="opt">
+          <input id="d" type="radio" value="d" name="quizs" />
+          <label for="d">d) 21</label>
+        </div>
+      </div>
+      <button id="submitBtn">Submit</button>
       <p id="feedback"></p>
     </div>
     <script src="main.js"></script>
