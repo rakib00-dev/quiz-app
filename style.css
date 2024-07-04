@@ -5,4 +5,10 @@
 
 body {
   padding: 30px;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+li {
+  list-style: none;
 }
