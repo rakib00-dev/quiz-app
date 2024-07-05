@@ -5,11 +5,20 @@ const feedback = document.getElementById('feedback');
 btn.onclick = quiz;
 
 function quiz() {
-  if ((correctOption.innerText = 'c) 14')) {
+  if (correctOption.checked == true && correctOption.value == 'c') {
     console.log('ok');
-    feedback.innerHTML = 'ok';
+
+    feedback.style.color = 'white';
+    feedback.style.background = 'green';
+    feedback.style.display = 'block';
+    feedback.style.fontWeight = 'bolder';
+    feedback.innerHTML = 'Congrats! You Make A Correct Answer';
   } else {
     console.log('not ok');
-    feedback.innerHTML = 'not ok';
+    feedback.innerHTML = 'Incorrect. the correct answer is c) 14';
+    feedback.style.display = 'block';
+    feedback.style.color = 'red';
+    feedback.style.fontWeight = 'bolder';
+    feedback.style.background = 'wheat';
   }
 }

@@ -20,7 +20,9 @@ h2 {
 }
 
 #quiz-container {
-  width: 570px;
+  /* display: inline; */
+  width: 562px;
+  margin: auto;
 }
 
 .highlights {
@@ -80,4 +82,22 @@ input {
 
 #submitBtn:active {
   box-shadow: 0px 0px 0px rgb(33, 33, 33);
+}
+
+#feedback {
+  display: none;
+  width: fit-content;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 5px;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@media (max-width: 662px) {
+  #quiz-container {
+    display: inline;
+    margin: auto;
+  }
 }
